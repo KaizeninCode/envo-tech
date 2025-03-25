@@ -65,7 +65,7 @@ const ContactPage = () => {
         <form onSubmit={handleSubmit} className="space-y-8">
           <div className="mb-8">
             <p className="font-vietnam mb-3 text-white">Get in touch</p>
-            <h1 className= text-sky-600 font-bold lg:text-6xl text-3xl">
+            <h1 className=" text-sky-600 font-bold lg:text-6xl text-3xl">
               We would like to hear from you
             </h1>
           </div>
@@ -75,7 +75,7 @@ const ContactPage = () => {
                 type="text"
                 name="firstname"
                 id="fname"
-                className="border-b border-white w-[100%] lg:p-3 p-2 outline-0"
+                className="border-b border-white w-[100%] lg:p-3 p-2 outline-0 "
                 placeholder="First Name"
                 onChange={handleFirstNameChange}
                 value={firstName}
@@ -87,7 +87,7 @@ const ContactPage = () => {
                 type="text"
                 name="lastname"
                 id="lname"
-                className="border-b border-white w-[100%] lg:p-3 p-2 outline-0"
+                className="border-b border-white w-[100%] lg:p-3 p-2 outline-0 "
                 placeholder="Last Name"
                 onChange={handleLastNameChange}
                 value={lastName}
@@ -100,7 +100,7 @@ const ContactPage = () => {
               type="email"
               name="email"
               id="email"
-              className="border-b border-white w-[100%] lg:p-3 p-2 outline-0"
+              className="border-b border-white w-[100%] lg:p-3 p-2 outline-0 "
               placeholder="email@example.com"
               onChange={handleEmailChange}
               value={email}
@@ -112,7 +112,7 @@ const ContactPage = () => {
               type="text"
               name="phone"
               id="phone"
-              className="border-b border-white w-[100%] lg:p-3 p-2 outline-0"
+              className="border-b border-white w-[100%] lg:p-3 p-2 outline-0 "
               placeholder="+1-234-567890"
               onChange={handlePhoneNumberChange}
               value={phoneNumber}
@@ -123,7 +123,7 @@ const ContactPage = () => {
             <textarea
               name="message"
               id="message"
-              className="border-b border-white w-[100%] lg:p-3 p-2 outline-0"
+              className="border-b border-white w-[100%] lg:p-3 p-2 outline-0 "
               placeholder="Your message here"
               onChange={handleMessageChange}
               value={message}
@@ -133,7 +133,7 @@ const ContactPage = () => {
           <>
             <button
               type="submit"
-              className= p-2 rounded-lg bg-sky-600 border-sky-600 text-white transition duration-700 ease-in-out hover:bg-white hover:text-sky-600 hover:cursor-pointer"
+              className=" p-2 rounded-lg bg-sky-600 border-sky-600 text-white transition duration-700 ease-in-out hover:bg-white hover:text-sky-600 hover:cursor-pointer"
             >
               Send Message
             </button>
