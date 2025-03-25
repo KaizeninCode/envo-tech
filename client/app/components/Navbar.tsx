@@ -1,7 +1,13 @@
+'use client'
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Navbar = () => {
+    const router = useRouter()
+  
+  const handleContactClick = () => router.push('/contact')
+
   const navlinks = [
     { name: "Home", url: "/" },
     { name: "About Us", url: "/about" },
@@ -22,7 +28,7 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-      <button className="border rounded-lg p-2 transition duration-500 ease-in-out cursor-pointer hover:bg-white hover:text-sky-800">
+      <button className="bg-sky-600 rounded-lg p-2 transition duration-500 ease-in-out cursor-pointer hover:bg-white hover:text-sky-600" onClick={handleContactClick}>
         Contact Us
       </button>
     </nav>
