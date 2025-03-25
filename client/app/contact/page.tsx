@@ -38,7 +38,7 @@ const ContactPage = () => {
         message,
       };
       const r = await axios.post(
-        "https://vision-quest-backend-pckb.onrender.com/db/add-to-db",
+        "https://envo-tech.onrender.com/db/add-to-db",
         data,
         {
           headers: {
