@@ -41,6 +41,21 @@ const ServicesPage = () => {
     },
   ];
 
+  const capacityList = [
+    {
+      title: 'Small Scale',
+      description: '1000 to 50,000 liters',
+    },
+    {
+      title: 'Medium Scale',
+      description: '50,000 to 500,000 liters',
+    },
+    {
+      title: 'Large Scale',
+      description: '500,000 to 1,000,000 liters',
+    },
+  ]
+
   return (
     <>
       <section className="flex-1 lg:p-8 p-4 bg-[url(/services5.png)] bg-center bg-cover min-h-screen">
@@ -235,6 +250,35 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className="bg-[url(/services7.png)] bg-cover bg-center rounded-xl" />
+        </div>
+      </section>
+      {/* service description 5*/}
+      <section className="lg:my-24 my-8 flex-1 p-8">
+        <div className="grid lg:grid-cols-2 lg:w-4/5 mx-auto gap-16">
+          <div className="bg-[url(/services5.jpg)] bg-cover bg-center rounded-xl" />
+          <div className="space-y-5">
+            <h1 className="lg:text-5xl text-3xl font-bold text-sky-600">
+              Water Storage Solutions
+            </h1>
+            <p className="font-extralight text-lg">
+              We offer revolutionary Glass Reinforced Plastic (GRP) tanks
+              designed for long-term reliability, durability, and hygiene. Our
+              modular GRP panel tanks provide an efficient and cost-effective
+              solution for water storage, catering to municipal, industrial,
+              commercial, agricultural, and residential applications. <br />
+              <br />
+              The GRP tanks are designed to meet international standards (BS
+              7491, ISO 9001 standards) for safe and reliable water storage. The
+              tanks are available in various configurations and can be
+              customized to meet specific site requirements. <br />
+            </p>
+            <h1 className="text-sky-600 text-xl">The capacity ranges include:</h1>
+            <ul className="lg:text-xl text-sm font-extralight list-disc lg:pl-8 pl-4 space-y-4">
+              {capacityList.map((item, index) => (
+                <li key={index}>{item.title}: {item.description}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
       {/* Get in Touch */}
