@@ -199,7 +199,7 @@ const ServicesPage = () => {
       {/* service description 3*/}
       <section className="lg:my-24 my-8 flex-1 p-8">
         <div className="grid lg:grid-cols-2 lg:w-4/5 mx-auto gap-16">
-          <div className="bg-[url(/services6.png)] bg-cover bg-center rounded-xl" />
+          <div className="bg-[url(/services4.jpg)] bg-cover bg-center rounded-xl" />
           <div className="space-y-5">
             <h1 className="lg:text-5xl text-3xl font-bold text-sky-600">
               Technology, Data and AI solutions
